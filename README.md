@@ -1,5 +1,17 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Functional requirements for the project
+
+Create a next.js app to showcase a counter that has the ability to increment and decrement by 1.
+Add another instance of this component, right next to the previous one. The second instance will have an additional input box which will take in a value with which the counter will increment and decrement.
+For example, if I set this value to 4, the counter should increment by 4 when the increment button is pressed and decrement by 4 when the decrement button is pressed. Handle all edge cases for this scenario. 
+
+Following are the constraints to be adhered to:
+
+1. Create a useCounter hook to extract this functionality into a hook.
+2. Use tailwind css and add a toggle button to the ui to toggle dark mode on and off. This functionality should also be extracted to a hook called useDarkMode.
+3. Use an httpOnly cookie to store the counter values and darkmode flag. When the browser is refreshed, these values should be persisted. Also handle the case where the cookies are manually deleted.
+
 ## Getting Started
 
 First, run the development server:
